@@ -1,7 +1,7 @@
 const purplePlanetElem = document.querySelector("#purple-planet");
 const redPlanetElem = document.querySelector("#red-planet");
-const TWITCH_LINK = "https://www.twitch.tv/Broslunas08";
-const YOUTUBE_LINK = "https://www.youtube.com/@Broslunas0";
+const TWITCH_LINK = "https://linktree.broslunas.com/twitch/";
+const YOUTUBE_LINK = "https://linktree.broslunas.com/youtube/";
 const DEFAULT_TARGET = "_blank";
 
 purplePlanetElem.addEventListener("click", () => {
