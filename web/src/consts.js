@@ -153,15 +153,4 @@ export const PROJECTS = [
       "Tic-Tac-Toe",
     ],
   },
-  {
-    slug: "15-golpea-al-topo",
-    title: "Hundir la Flota",
-    hidden: false,
-    learnings: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Grid Layout",
-    ],
-  },
 ];
