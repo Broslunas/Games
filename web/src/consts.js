@@ -153,4 +153,14 @@ export const PROJECTS = [
       "Tic-Tac-Toe",
     ],
   },
+  {
+    slug: "15-zelda",
+    title: "Zelda: Wind Waker",
+    hidden: false,
+    learnings: [
+      "3D",
+      "ThreeJS",
+      "Vite"
+    ],
+  },
 ];
