@@ -163,4 +163,13 @@ export const PROJECTS = [
       "Vite"
     ],
   },
+  {
+    slug: "16-2048",
+    title: "2048",
+    hidden: false,
+    learnings: [
+      "JavaScript",
+      "CSS",
+    ],
+  },
 ];
