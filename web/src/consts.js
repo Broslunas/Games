@@ -172,4 +172,13 @@ export const PROJECTS = [
       "CSS",
     ],
   },
+  {
+    slug: "17-hextrix",
+    title: "Hextrix",
+    hidden: false,
+    learnings: [
+      "JavaScript",
+      "CSS",
+    ],
+  },
 ];
