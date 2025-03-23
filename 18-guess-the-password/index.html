@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Adivina la Contraseña</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="shortcut icon"
+      href="https://cdn.broslunas.com/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Adivina la Contraseña</h1>
+      <p>Introduce una combinación de 5 dígitos</p>
+
+      <p id="message" class="message hidden"></p>
+
+      <!-- Campos de dígitos -->
+      <div class="input-group">
+        <input type="number" maxlength="1" placeholder="0" class="input" />
+        <input type="number" maxlength="1" placeholder="0" class="input" />
+        <input type="number" maxlength="1" placeholder="0" class="input" />
+        <input type="number" maxlength="1" placeholder="0" class="input" />
+        <input type="number" maxlength="1" placeholder="0" class="input" />
+      </div>
+
+      <!-- Retroalimentación (ejemplo en verde) -->
+      <div class="feedback-group">
+        <div class="feedback-box null feedback"></div>
+        <div class="feedback-box null feedback"></div>
+        <div class="feedback-box null feedback"></div>
+        <div class="feedback-box null feedback"></div>
+        <div class="feedback-box null feedback"></div>
+      </div>
+
+      <button id="check">Comprobar</button> <br />
+      <button id="restart">Reiniciar</button>
+
+      <!-- Leyenda de colores -->
+      <div class="legend">
+        <div class="legend-item">
+          <div class="legend-color green"></div>
+          <span>Dígito correcto en posición correcta</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-color yellow"></div>
+          <span>Dígito correcto en posición incorrecta</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-color red"></div>
+          <span>Dígito incorrecto</span>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>

@@ -1,0 +1,141 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.message {
+  font-size: 1.1rem;
+  font-style: bold;
+}
+
+.input-group {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.input-group input {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 1.2rem;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.input-group input:focus {
+  border-color: #007bff;
+}
+
+.feedback-group {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Cuadros de retroalimentación */
+.feedback-box {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  border: 2px solid #ccc;
+}
+
+/* Ejemplo: todas en verde para la demo */
+.correct {
+  background-color: #28a745; /* Verde */
+  border-color: #28a745;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.legend {
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.legend-color {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5rem;
+  border-radius: 4px;
+  border: 2px solid #ccc;
+}
+
+.null {
+  background-color: #e8e8e8; /* Correcto en posición */
+  border-color: #636363;
+}
+
+.green {
+  background-color: #28a745; /* Correcto en posición */
+  border-color: #28a745;
+}
+
+.yellow {
+  background-color: #ffc107; /* Correcto en otra posición */
+  border-color: #ffc107;
+}
+
+.red {
+  background-color: #dc3545; /* Incorrecto */
+  border-color: #dc3545;
+}
+
+.warning {
+  background-color: #ff5100;
+  color: #fff;
+  border-color: #ff5100;
+}
+
+.hidden {
+  display: none;
+}
