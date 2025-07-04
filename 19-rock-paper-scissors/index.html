@@ -1,32 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Piedra, Papel o Tijera</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="normalice.css" />
+    <style></style>
   </head>
   <body>
-    <div class="container">
-      <h1 class="title">Piedra, Papel o Tijera</h1>
-      <div class="game">
-        <section class="results">
-          <div class="player1 players">
-            <h2>Tú</h2>
-            <div class="feedback-box feedback"></div>
-          </div>
-          <div class="player2 players">
-            <h2>IA</h2>
-            <div class="feedback-box feedback"></div>
-          </div>
-        </section>
-        <section class="elections">
-          <button class="btn rock">Piedra</button>
-          <button class="btn paper">Papel</button>
-          <button class="btn scissors">Tijera</button>
-        </section>
-      </div>
+    <h1>🪨 📄 ✂️ Piedra, Papel o Tijera</h1>
+
+    <div class="resultados">
+      <p>Jugador: <span class="player1">❓</span></p>
+      <p>IA: <span class="player2">❓</span></p>
+      <p>
+        <strong>Resultado:</strong>
+        <span class="result">Esperando jugada...</span>
+      </p>
     </div>
+
+    <div class="botones">
+      <button class="boton rock">🪨 Piedra</button>
+      <button class="boton paper">📄 Papel</button>
+      <button class="boton scissors">✂️ Tijera</button>
+    </div>
+
+    <button class="boton reset">Reiniciar</button>
+
+    <script src="app.js"></script>
   </body>
 </html>

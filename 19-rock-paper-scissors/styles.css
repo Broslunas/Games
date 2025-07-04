@@ -1,69 +1,77 @@
-@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap");
 
-html {
-  font-family: "Fjalla One", sans-serif;
-}
-.container {
-  position: fixed;
-  top: 20%;
-  left: 20%;
-  right: 20%;
-  bottom: 20%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  background-color: #f0f0f0;
+* {
+  box-sizing: border-box;
 }
 
-.title {
-  margin-top: 20px;
-  text-align: center;
-  font-size: 2.5rem;
-}
-
-.results {
-  display: flex;
-  justify-content: space-around;
-  margin: 0 10vw;
-}
-
-.players {
+body {
+  margin: 0;
+  font-family: "Orbitron", sans-serif;
+  background: radial-gradient(circle at top, #111827, #0f172a);
+  color: #f8fafc;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.feedback-group {
-  display: flex;
   justify-content: center;
-  gap: 0.5rem;
-  margin-bottom: 1.5rem;
+  min-height: 100vh;
+  padding: 20px;
 }
 
-.feedback-box {
-  width: 50px;
-  height: 50px;
-  border-radius: 4px;
-  border: 2px solid #ccc;
+h1 {
+  font-size: 2.5rem;
+  color: #60a5fa;
+  text-shadow: 0 0 10px #3b82f6;
+  margin-bottom: 40px;
 }
 
-.elections {
-  margin-top: 50px;
+span {
+  color: #3b82f6;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.resultados {
+  background: rgba(30, 41, 59, 0.9);
+  border: 2px solid #3b82f6;
+  box-shadow: 0 0 15px #3b82f6aa;
+  border-radius: 15px;
+  padding: 25px;
+  width: 320px;
+  text-align: center;
+  margin-bottom: 40px;
+  transition: 0.3s;
+}
+
+.resultados p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.botones {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.btn {
-  padding: 10px 20px;
-  font-size: 1.2rem;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 4px;
+.boton {
+  background: #1e40af;
+  border: 2px solid #3b82f6;
+  color: #f8fafc;
+  font-size: 1.1rem;
+  padding: 15px 25px;
+  border-radius: 12px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 0 10px #3b82f666;
 }
 
-.btn:hover {
-  background-color: #0056b3;
+.boton:hover {
+  background: #2563eb;
   transform: scale(1.05);
+  box-shadow: 0 0 15px #3b82f6;
+}
+
+.reset {
+  margin-top: 20px;
 }
