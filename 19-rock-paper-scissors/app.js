@@ -14,7 +14,7 @@ let player1Choice = "";
 let player2Choice = "";
 
 function getRandomChoice() {
-  player2Choice = Math.floor(Math.random() * 2);
+  player2Choice = Math.floor(Math.random() * 3);
   switch (player2Choice) {
     case 0:
       player2Choice = "🪨";
