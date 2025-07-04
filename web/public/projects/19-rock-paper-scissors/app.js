@@ -10,7 +10,7 @@ const player1Result = document.querySelector(".player1");
 const player2Result = document.querySelector(".player2");
 const resultText = document.querySelector(".result");
 
-const choices = ["rock", "paper", "scissors"];
+const choices = ["🪨", "📄", "✂️"];
 
 let player1Choice = "";
 let player2Choice = "";
