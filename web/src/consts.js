@@ -107,4 +107,11 @@ export const PROJECTS = [
     hidden: false,
     learnings: ["JavaScript", "CSS"],
   },
+  ,
+  {
+    slug: "19-rock-paper-scissors",
+    title: "Piedra, Papel o Tijera",
+    hidden: false,
+    learnings: ["JavaScript", "CSS"],
+  },
 ];

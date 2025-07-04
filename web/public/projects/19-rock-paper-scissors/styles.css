@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Orbitron", sans-serif;
+  background: radial-gradient(circle at top, #111827, #0f172a);
+  color: #f8fafc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #60a5fa;
+  text-shadow: 0 0 10px #3b82f6;
+  margin-bottom: 40px;
+}
+
+span {
+  color: #3b82f6;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.resultados {
+  background: rgba(30, 41, 59, 0.9);
+  border: 2px solid #3b82f6;
+  box-shadow: 0 0 15px #3b82f6aa;
+  border-radius: 15px;
+  padding: 25px;
+  width: 320px;
+  text-align: center;
+  margin-bottom: 40px;
+  transition: 0.3s;
+}
+
+.resultados p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.botones {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.boton {
+  background: #1e40af;
+  border: 2px solid #3b82f6;
+  color: #f8fafc;
+  font-size: 1.1rem;
+  padding: 15px 25px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 0 10px #3b82f666;
+}
+
+.boton:hover {
+  background: #2563eb;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #3b82f6;
+}
+
+.reset {
+  margin-top: 20px;
+}
