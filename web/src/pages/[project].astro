@@ -4,23 +4,30 @@ import InfoProject from "../components/InfoProject.astro"
 import Layout from "../layouts/Layout.astro"
 
 export function getStaticPaths() {
-  return PROJECTS.map((project) => {
-    return {
-      params: {
-        project: project.slug,
-      },
-    }
-  })
+  return PROJECTS
+    .filter((project) => project !== undefined)
+    .map((project) => {
+      return {
+        params: {
+          project: project.slug,
+        },
+      }
+    })
 }
 
 const { project } = Astro.params
-const index = PROJECTS.findIndex((p) => p.slug === project)
-const info = PROJECTS[index]
+const index = PROJECTS.findIndex((p: typeof PROJECTS[number]) => p && p.slug === project)
+const info = index !== -1 ? PROJECTS[index] : undefined
 const number = `${index + 1}`.padStart(2, "0")
 ---
 
-<Layout title={`Broslunas Games - ${number}: ${info.title}`}>
-  <iframe title={`${info.title}`}class="w-screen h-dvh" src={`/projects/${project}/index.html`}
-  ></iframe>
-  <InfoProject info={{ ...info, number }} />
-</Layout>
+{info ? (
+  <Layout title={`Broslunas Games - ${number}: ${info.title}`}>
+    <iframe title={`${info.title}`} class="w-screen h-dvh" src={`/projects/${project}/index.html`}></iframe>
+    <InfoProject info={{ ...info, number }} />
+  </Layout>
+) : (
+  <Layout title="Proyecto no encontrado">
+    <p>Proyecto no encontrado.</p>
+  </Layout>
+)}

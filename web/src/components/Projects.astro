@@ -1,7 +1,12 @@
 ---
 import { PROJECTS } from "../consts"
 
-const finalProjects = PROJECTS.filter((project) => !project.hidden)
+// Filtrado con verificación de tipo para evitar el error de "project possibly undefined"
+const finalProjects = PROJECTS
+  .filter(
+    (project): project is NonNullable<typeof project> =>
+      !!project && project.hidden === false
+  )
   .slice()
   .reverse()
 ---
