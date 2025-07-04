@@ -10,13 +10,11 @@ const player1Result = document.querySelector(".player1");
 const player2Result = document.querySelector(".player2");
 const resultText = document.querySelector(".result");
 
-const choices = ["🪨", "📄", "✂️"];
-
 let player1Choice = "";
 let player2Choice = "";
 
 function getRandomChoice() {
-  player2Choice = Math.floor(Math.random() * choices.length);
+  player2Choice = Math.floor(Math.random() * 2);
   switch (player2Choice) {
     case 0:
       player2Choice = "🪨";
@@ -30,10 +28,8 @@ function getRandomChoice() {
   }
 }
 
-console.log(player2Choice);
-
 rockButton.addEventListener("click", () => {
-  player1Choice = "rock";
+  player1Choice = "🪨";
   getRandomChoice();
   player1Result.textContent = "🪨";
   player2Result.textContent = `${player2Choice}`;
@@ -48,7 +44,7 @@ rockButton.addEventListener("click", () => {
 });
 
 paperButton.addEventListener("click", () => {
-  player1Choice = "paper";
+  player1Choice = "📄";
   getRandomChoice();
   player1Result.textContent = "📄";
   player2Result.textContent = `${player2Choice}`;
@@ -63,7 +59,7 @@ paperButton.addEventListener("click", () => {
 });
 
 scissorsButton.addEventListener("click", () => {
-  player1Choice = "scissors";
+  player1Choice = "✂️";
   getRandomChoice();
   player1Result.textContent = "✂️";
   player2Result.textContent = `${player2Choice}`;
