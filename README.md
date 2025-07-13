@@ -43,4 +43,4 @@ Este proyecto nace con la idea de practicar desarrollo web mientras se crean jue
 
 ---
 
-💌 Contacto: [pablo@broslunas.com](mailto:pablo@broslunas.com)
+💌 Contacto: [pablo@broslunas.com](mailto:pablo@broslunas.com) o [Formulario de Contacto](https://broslunas.com/contacto)
